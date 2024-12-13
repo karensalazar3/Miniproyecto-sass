@@ -1,0 +1,63 @@
+/* src/App.scss */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    nav {
+      a {
+        color: white;
+        margin: 0 15px;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 20px auto;
+    input,
+    textarea {
+      padding: 10px;
+      margin-bottom: 10px;
+      font-size: 1rem;
+    }
+    button {
+      padding: 10px;
+      background-color: #333;
+      color: white;
+      border: none;
+      cursor: pointer;
+      &:hover {
+        background-color: #555;
+      }
+    }
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    li {
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+  }
+  
