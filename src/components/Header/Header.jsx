@@ -1,7 +1,6 @@
-// src/components/Header/Header.jsx
-import React from 'react';
-import { Link } from 'react-router-dom';
-import './Header.scss';
+import React from 'react'
+import { Link } from 'react-router-dom'
+import './Header.scss'
 
 const Header = () => {
   return (
@@ -15,4 +14,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Header

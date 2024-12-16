@@ -1,15 +1,15 @@
-import React, { useState } from 'react';
-import './Form.scss';
+import React, { useState } from 'react'
+import './Form.scss'
 
 const Form = () => {
-  const [title, setTitle] = useState('');
-  const [description, setDescription] = useState('');
+  const [title, setTitle] = useState('')
+  const [description, setDescription] = useState('')
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-    const newsData = { title, description };
-    console.log(newsData);
-  };
+    e.preventDefault()
+    const newsData = { title, description }
+    console.log(newsData)
+  }
 
   return (
     <div className="form-container">
@@ -29,7 +29,7 @@ const Form = () => {
         <button type="submit">Crear Noticia</button>
       </form>
     </div>
-  );
-};
+  )
+}
 
-export default Form;
+export default Form
