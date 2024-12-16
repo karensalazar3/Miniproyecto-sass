@@ -1,63 +1,29 @@
-/* src/App.scss */
+@import './styles/colors.scss';
+
 body {
-    font-family: Arial, sans-serif;
+  background-color: $background-color;
+  color: $text-color;
+  font-family: $font-family;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $text-color;
+  margin-bottom: 10px;
+}
+
+p {
+  color: $paragraph-color;
+  line-height: 1.6;
+}
+
+a {
+  color: $text-color;
+  text-decoration: none;
+
+  &:hover {
+    color: $hover-color;
   }
-  
-  header {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    nav {
-      a {
-        color: white;
-        margin: 0 15px;
-        text-decoration: none;
-        &:hover {
-          text-decoration: underline;
-        }
-      }
-    }
-  }
-  
-  footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
-    margin: 20px auto;
-    input,
-    textarea {
-      padding: 10px;
-      margin-bottom: 10px;
-      font-size: 1rem;
-    }
-    button {
-      padding: 10px;
-      background-color: #333;
-      color: white;
-      border: none;
-      cursor: pointer;
-      &:hover {
-        background-color: #555;
-      }
-    }
-  }
-  
-  ul {
-    list-style-type: none;
-    padding: 0;
-    li {
-      padding: 10px;
-      border-bottom: 1px solid #ddd;
-    }
-  }
-  
+}

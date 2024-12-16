@@ -1,5 +1,5 @@
-// src/components/Form.jsx
 import React, { useState } from 'react';
+import './Form.scss';
 
 const Form = () => {
   const [title, setTitle] = useState('');
@@ -8,11 +8,11 @@ const Form = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const newsData = { title, description };
-    console.log(newsData); // Muestra los datos en la consola
+    console.log(newsData);
   };
 
   return (
-    <div>
+    <div className="form-container">
       <h2>Crear Noticia</h2>
       <form onSubmit={handleSubmit}>
         <input

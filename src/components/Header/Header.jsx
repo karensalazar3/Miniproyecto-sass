@@ -1,13 +1,15 @@
+// src/components/Header/Header.jsx
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './Header.scss';
 
 const Header = () => {
   return (
-    <header>
-      <nav>
-        <Link to="/">Home</Link>
-        <Link to="/form">Crear Noticia</Link>
-        <Link to="/list">Lista de Noticias</Link>
+    <header className="header">
+      <nav className="nav">
+        <Link to="/" className="link">Home</Link>
+        <Link to="/form" className="link">Crear Noticia</Link>
+        <Link to="/list" className="link">Lista de Noticias</Link>
       </nav>
     </header>
   );

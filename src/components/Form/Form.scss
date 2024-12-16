@@ -1,0 +1,49 @@
+@import '../../styles/colors.scss';
+
+.form-container {
+  background-color: rgba(250, 246, 246, 0.1); 
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px;
+  margin: 20px auto;
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.2);
+
+  h2 {
+    text-align: center;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+    input, textarea {
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid $text-color;
+      border-radius: 5px;
+      color: $text-color;
+      font-family: $font-family;
+
+      &:focus {
+        border-color: $paragraph-color;
+        outline: none;
+      }
+    }
+
+    button {
+      padding: 10px;
+      background-color: $paragraph-color;
+      color: $background-color;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+      font-weight: bold;
+
+      &:hover {
+        background-color: $text-color;
+        color: $paragraph-color;
+      }
+    }
+  }
+}
